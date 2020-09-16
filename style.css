@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+  background: url("tło.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Calibri', 'Helvetica';
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.transcription {
+      max-width: 70vw;
+      margin: auto;
+      background: white;
+      box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+      padding: 1vh 1vw 1vh 1vw;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 2px;
+      background-size: 100% 2rem;
+      line-height: 2rem;
+}
