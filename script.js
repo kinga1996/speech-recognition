@@ -9,7 +9,7 @@ const tranciptionsDiv = document.querySelector('.transcription');
 tranciptionsDiv.appendChild(p);
 
 recognition.addEventListener('result', e=>{
-	const transcipts = Array.from(e.results)
+	const transcipt = Array.from(e.results)
 		.map(result => result[0])
 		.map(result => result.transcript)
 		.join('');
