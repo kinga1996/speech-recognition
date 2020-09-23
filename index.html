@@ -3,16 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Speech Recognition</title>
-  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-	<button id="clearDiv">Delete all text</button>
-	<button id="saveDoc">Save in comupter as doc</button>
-	<button id="savePDF">Save in computer as doc</button>
-	<button id="sentMail">Sent to your mail</button>
+	<div class="upInfo">
+	
+	<img class="flag" id="US" src="flagi/flagaUS.png">
+	<img class="flag" id="PL" src="flagi/flagaPL.png">
+	<img class="flag" id="RUS" src="flagi/flagaRUS.png">
+	<img class="flag" id="HIS" src="flagi/flagaHISZP.jpg">
+	<br>
+
+	<button id="startStop" onclick="startStop()">Start writting</button>
+	<button id="clearDiv" onclick="clearDiv()">Delete all text</button>
+	<button id="saveTxt" onclick="downloadTxt()">Save in computer as txt</button>
+
+	<h4>You can tell me something and I will write it down. You have a choice of 4 languages of speech - press the appropriate flag.</h4>
+	</div>
+
 	<div class="transcription" contenteditable>
  	</div>
 
+ 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
+
 </body>
 </html>
